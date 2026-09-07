@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - M Farros Naufal Z</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+  :root {
+    --ink: #1c1d1b;
+    --paper: #fbfaf7;
+    --line: #d8d5cc;
+    --accent: #3a5a40;
+    --muted: #5f5d54;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #e9e7e0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--ink);
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px;
+  }
+
+  .page {
+    background: var(--paper);
+    width: 100%;
+    max-width: 760px;
+    padding: 56px 52px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 700;
+    font-size: 34px;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.01em;
+  }
+
+  .role {
+    font-size: 15px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .contact {
+    text-align: right;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  section { margin-bottom: 26px; }
+
+  h2 {
+    font-family: 'Source Serif 4', serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent);
+    margin: 0 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  p.summary {
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--ink);
+    margin: 0;
+    max-width: 62ch;
+  }
+
+  .entry { margin-bottom: 16px; }
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .entry-title {
+    font-weight: 600;
+    font-size: 14.5px;
+  }
+
+  .entry-place {
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+
+  .entry-date {
+    font-size: 12.5px;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .entry ul {
+    margin: 6px 0 0 0;
+    padding-left: 18px;
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--ink);
+  }
+
+  .entry ul li { margin-bottom: 3px; }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+  }
+
+  .skills span {
+    font-size: 13px;
+    padding: 4px 12px;
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  @media (max-width: 600px) {
+    .page { padding: 32px 22px; }
+    header { flex-direction: column; align-items: flex-start; }
+    .contact { text-align: left; }
+    .two-col { grid-template-columns: 1fr; }
+  }
+
+  @media print {
+    body { background: var(--paper); padding: 0; }
+    .page { box-shadow: none; max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <div>
+        <h1>M Farros Naufal Z</h1>
+        <div class="role">Siswa SMK &mdash; Teknik Komputer & Jaringan &amp; IT Support</div>
+      </div>
+      <div class="contact">
+        farrosss@gmail.com<br>
+        0857-8748-2478<br>
+        Balikpapan, Indonesia<br>
+        linkedin.com/in/itsupport
+      </div>
+    </header>
+
+    <section>
+      <h2>Ringkasan</h2>
+      <p class="summary">
+        Siswa SMK jurusan IT dengan pengalaman magang sebagai IT support, menangani troubleshooting jaringan, perawatan CCTV, setup AV untuk acara, dan servis PC. Terbiasa bekerja langsung di lapangan dan menyelesaikan masalah teknis secara mandiri maupun tim.
+      </p>
+    </section>
+
+    <section>
+      <h2>Pengalaman PKL</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">IT Support Intern &mdash; Nama Hotel/Perusahaan</span>
+          <span class="entry-date">2025 &ndash; 2026</span>
+        </div>
+        <div class="entry-place">Balikpapan</div>
+        <ul>
+          <li>Melakukan troubleshooting jaringan ketika terjadi gangguan koneksi pada perangkat dan area kerja.</li>
+          <li>Membantu melakukan pengecekan dan perawatan perangkat jaringan serta memastikan perangkat dapat digunakan dengan baik.</li>
+          <li>Melakukan instalasi, pengecekan, dan perawatan komputer serta printer.</li>
+          <li>Menangani masalah pada PC, seperti pengecekan hardware, kabel, koneksi, dan perangkat pendukung.</li>
+          <li>Melakukan pengecekan, perawatan, dan reposisi CCTV sesuai kebutuhan di area kerja.</li>
+          <li>Membantu menyiapkan perangkat audio-visual seperti proyektor, layar, speaker, dan perangkat pendukung untuk kegiatan atau acara.</li>
+          <li>Membantu menangani kebutuhan teknis dari pengguna ketika terdapat masalah pada perangkat IT.</li>
+          <li>Bekerja sama dengan tim dalam menyelesaikan masalah teknis dan melakukan pekerjaan di beberapa area gedung.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <section>
+        <h2>Pendidikan</h2>
+        <div class="entry">
+          <div class="entry-head">
+            <span class="entry-title">SMK &mdash; Teknik Komputer & Jaringan</span>
+          </div>
+          <div class="entry-place">SMK Airlangga Balikpapan</div>
+          <div class="entry-date">2024 &ndash; 2027</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Keahlian</h2>
+        <div class="skills">
+          <span>Troubleshooting Jaringan</span>
+          <span>Instalasi PC</span>
+          <span>CCTV</span>
+          <span>AV Setup</span>
+          <span>Microsoft Office</span>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</body>
+</html>
